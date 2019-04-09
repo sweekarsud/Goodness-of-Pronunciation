@@ -1,3 +1,7 @@
+"""
+Authors : Sweekar Sudhakara, Manoj Kumar Ramanathi, Chiranjeevi Yarra, Prasanta Kumar Ghosh
+Paper Title : An improved goodness of pronunciation (GoP) measure for pronunciation evaluation with DNN-HMM system considering HMM transition probabilities
+"""
 
 import math
 import os
