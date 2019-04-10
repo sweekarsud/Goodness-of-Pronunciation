@@ -3,4 +3,4 @@ This code reflects the work described in the InterSpeech 2019 submitted paper on
 
 # Requirements
 	*  Python (tested with v.2.7.5 & v.3.5.7)
-	*  Kaldi ASR toolkit (for documentation check : http://kaldi-asr.org/)
+	*  Kaldi ASR toolkit (for documentation check : (http://kaldi-asr.org/) )
