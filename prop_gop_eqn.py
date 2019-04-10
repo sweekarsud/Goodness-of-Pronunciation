@@ -9,11 +9,7 @@ import subprocess
 import pandas as pd
 import numpy as np
 
-path = os.getcwd();
-
-#to generate look up table containing transition-id's, pdf-id's (senones) and transition probability list
-import sys, os
-os.system('./gen_lookup_table.sh'); 
+path = os.getcwd(); 
   
 #modifying posterior.ark to posterior.txt
 var1 = [path + '/reqd_files/' + sys.argv[1]];
