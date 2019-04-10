@@ -11,4 +11,4 @@ This code reflects the work described in the InterSpeech 2019 submitted paper on
 * A completely _Trained Acoustic Model_ on _NNET2_ (For example : Librispeech, Fisher-English, etc.).
 
 # Placement of the Downloaded folder
-* Once the _Goodness-of-Pronunciation-master.zip_ file is downloaded it needs to be placed in _/home/user/kaldi/egs/AcousticModel/s5/_ and needs to unzipped as _Extract_Here_ which will result in the creation of _Goodness-of-Pronunciation-master_ file at _/home/user/kaldi/egs/AcousticModel/s5/_ location.
+* Once the _Goodness-of-Pronunciation-master.zip_ file is downloaded it needs to be placed in _/home/user/kaldi/egs/AcousticModel/s5/_ and needs to unzipped as _Extract_Here_ which will result in the creation of the following path _/home/user/kaldi/egs/AcousticModel/s5/Goodness-of-Pronunciation-master/_.
