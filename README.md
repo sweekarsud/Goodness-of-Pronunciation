@@ -16,5 +16,8 @@ This code reflects the work described in the InterSpeech 2019 submitted paper on
 
 # Sample Code
 Run the following code to check the output for the sample data : (_alignment.txt_, _posterior.ark_) :
-`code(python prop_gop_eqn.py posterior.ark alignment.txt)`
+```python
+"python prop_gop_eqn.py posterior.ark alignment.txt"
+```
+
 
