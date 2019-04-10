@@ -9,3 +9,6 @@ This code reflects the work described in the InterSpeech 2019 submitted paper on
 * A file by the name _alignment.txt_ needs to be generated which should contain the forced-alignment of the learner's uttered speech.
 * Another file by the name _posterior.ark_ needs to be generated which should contain the posterior-probability of the learner's uttered speech.
 * A completely _Trained Acoustic Model_ on _NNET2_ (For example : Librispeech, Fisher-English, etc.).
+
+# Placement of the Downloaded folder
+* Once the _Goodness-of-Pronunciation-master.zip_ file is downloaded it needs to be placed in _/home/user/kaldi/egs/AcousticModel/s5/_ and needs to unzipped as _Extract_Here_ which will result in the creation of _Goodness-of-Pronunciation-master_ file at _/home/user/kaldi/egs/AcousticModel/s5/_ location.
