@@ -12,8 +12,8 @@ import numpy as np
 path = os.getcwd();
 
 #to generate look up table containing transition-id's, pdf-id's (senones) and transition probability list
-#import sys, os
-#os.system('./gen_lookup_table.sh'); 
+import sys, os
+os.system('./gen_lookup_table.sh'); 
   
 #modifying posterior.ark to posterior.txt
 var1 = [path + '/reqd_files/' + sys.argv[1]];
@@ -78,7 +78,7 @@ print('GOP formulated score of each phoneme : ');
 print(phone_score);   
                       
 #The phoneme_list.txt file contains phoneme's in the 1st column and GoP formulated scores in the 2nd column     
-f = open('phoneme_list.txt', 'wb')
+f = open('phoneme_list.txt', 'w')
 for i in range(len(phone_score)):
     f.write("%s   %f\n" % (aligned_phones[i], phone_score[i]))
 f.close()
