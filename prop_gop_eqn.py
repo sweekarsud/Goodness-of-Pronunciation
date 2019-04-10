@@ -11,10 +11,9 @@ import numpy as np
 
 path = os.getcwd();
 
-print sys.argv[2];
 #to generate look up table containing transition-id's, pdf-id's (senones) and transition probability list
-import sys, os
-os.system('./gen_lookup_table.sh'); 
+#import sys, os
+#os.system('./gen_lookup_table.sh'); 
   
 #modifying posterior.ark to posterior.txt
 var1 = [path + '/reqd_files/' + sys.argv[1]];
@@ -24,15 +23,15 @@ subprocess.call(['bash', 'modify_post.sh', str(var1[0])]);
 var2 = [path + '/reqd_files/' + sys.argv[2]];
 subprocess.call(['bash', 'extract_from_alignments.sh', str(var2[0])]);
                
-with open(path + '/tmp_segments.txt','r') as f:
+with open(path + '/reqd_files/tmp_segments.txt','r') as f:
     x = f.readlines();
 number_of_segments = [int(tmp.split(' ')[0]) for tmp in x]; 
                       
-with open(path + '/tmp_t_ids.txt','r') as f:
+with open(path + '/reqd_files/tmp_t_ids.txt','r') as f:
     x = f.readlines();
 transition_id = [int(tmp.rstrip().split(' ')[0]) for tmp in x];
 
-with open(path + '/tmp_phones.txt','r') as f:
+with open(path + '/reqd_files/tmp_phones.txt','r') as f:
     x = f.readlines();
 aligned_phones = [tmp.rstrip().split(' ')[0] for tmp in x];
 
