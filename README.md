@@ -10,5 +10,6 @@ This code reflects the work described in the InterSpeech 2019 submitted paper on
 * Another file by the name _posterior.ark_ needs to be generated which should contain the posterior-probability of the learner's uttered speech.
 * A completely _Trained Acoustic Model_ on _NNET2_ (For example : Librispeech, Fisher-English, etc.).
 
-# Placement of the Downloaded folder
+# Placement of the downloaded folder
 * Once the _Goodness-of-Pronunciation-master.zip_ file is downloaded it needs to be placed in _/home/user/kaldi/egs/AcousticModel/s5/_ and needs to unzipped as _Extract_Here_ which will result in the creation of the following path _/home/user/kaldi/egs/AcousticModel/s5/Goodness-of-Pronunciation-master/_.
+* Once the path is created it will have the following file structure :
