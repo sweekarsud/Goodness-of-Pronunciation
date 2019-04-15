@@ -21,12 +21,13 @@ python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 ```
 
 # Placement of the downloaded folder :
-* Once the _Goodness-of-Pronunciation-master.zip_ file is downloaded it needs to be placed in _/home/user/kaldi/egs/Native_Acoustic_Model/s5/_ and needs to unzipped as _Extract_Here_ which will result in the creation of the following path _/home/user/kaldi/egs/Native_Acoustic_Model/s5/Goodness-of-Pronunciation-master/_. The native acoustic model needs to be trained on _nnet2_ with all paths functional in _exp_ folder.
+* Once the _Goodness-of-Pronunciation-master.zip_ file is downloaded it needs to be placed in _/home/user/kaldi/egs/Native_Acoustic_Model/s5/_ and needs to unzipped as _Extract Here_ which will result in the creation of the following path _/home/user/kaldi/egs/Native_Acoustic_Model/s5/Goodness-of-Pronunciation-master/_. The native acoustic model needs to be trained on _nnet2_ with all paths functional in _exp_ folder.
 * Once the path is created it will have the following file structure :
 ```bash
 ├── kaldi_folder
 │   ├── native_acoustic_model
 │   │   ├── s5
+│   │   │   ├── Goodness-of-Pronunciation-master
 │   │   │   │   ├── extract_from_alignments.sh
 │   │   │   │   ├── gen_lookup_table.sh
 │   │   │   │   ├── modify_post.sh
