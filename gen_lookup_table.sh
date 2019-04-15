@@ -4,7 +4,7 @@ path="../exp/nnet2_online/nnet_ms_a_online"
 #source directory for final.mdl and phones.txt
 
 ../../../../src/bin/show-transitions $path/phones.txt $path/final.mdl > reqd_files/show_transitions.txt
-#the binary show-transitions will be in kaldi/src/bin/
+#the binary show-transitions will be available in kaldi/src/bin/
 
 echo "Generating lookup-table......."
 
