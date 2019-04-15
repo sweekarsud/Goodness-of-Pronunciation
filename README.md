@@ -10,7 +10,7 @@ Run the below code (**_prop_gop_eqn.py_**) to compute the score using the propos
 ```python
 python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 ```
-* The **_alignment_infile.txt_** file is the output of the forced-alignment of the learner's uttered speech and this are obtained using **_align.sh_**.
+* The **_alignment_infile.txt_** file is the output of the forced-alignment of the learner's uttered speech and these are obtained using **_align.sh_**.
 * The **_posterior_infile.ark_** file contains the frame level posterior-probabilities of the learner's uttered speech and these are obtained using **_nnet_am_compute.cc_**. 
 * The **_gop_outfile.txt_** file contains the score for each phoneme.
 
