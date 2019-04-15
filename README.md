@@ -3,23 +3,23 @@ This code reflects the work described in the InterSpeech 2019 submitted paper on
 
 # Requirements
 * Python (tested with v.2.7.5 & v.3.5.7)
-* Kaldi ASR toolkit (for documentation checkout : http://kaldi-asr.org/)
-* The _Native Acoustic Model_ used for computing the GoP formulated score needs to be trained with _nnet2_ considering the architecture provided in Dan's recipe (refer kaldi documentation).
+* Kaldi ASR toolkit (for documentation checkout : http://kaldi-asr.org/) considering acoustic models trained with _nnet2_ (Dan's recipe)
 
 # How to run the code : 
-Run the below code (**_prop_gop_eqn.py_**) to compute the score using the proposed GoP formulation score by passing **_alignment_infile.txt_** and **_posterior_infile.ark_** as the input file arguments to the python script for a given learner's utterance. 
+Run the below code (**_prop_gop_eqn.py_**) to compute the score using the proposed GoP formulation by passing **_alignment_infile.txt_** and **_posterior_infile.ark_** generated for a given learner's utterance. 
 ```python
 python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 ```
-* where **_alignment_infile.txt_** file is the forced-alignment of the learner's uttered speech which can be generated using **_align.sh_** (refer kaldi documentation) and the **_posterior_infile.ark_** file is the posterior-probability of the learner's uttered speech which can be generated using **_nnet_am_compute.cc_** (refer kaldi documentation). After generating the files, both these files need to be placed inside the _reqd_files_ folder.
+* The **_alignment_infile.txt_** file is the forced-alignment of the learner's uttered speech which can be generated using **_align.sh_**
+* The **_posterior_infile.ark_** file is the posterior-probability of the learner's uttered speech which can be generated using **_nnet_am_compute.cc_**. After generating the above files, both of these files needs to be placed inside the _reqd_files_ folder.
 * The GoP formulated score is printed in the **_gop_outfile.txt_** file.
 
 **NOTE** :
-* For running the above python script, initially the following shell script needs to be run to generate the lookup table for the native acoustic model and it only needs to be generated once for an acoustic model. A sample lookup-table has been given in the reqd_files folder for reference.
+* The above python script requires a lookup table for a given acoustic model as discussed in the paper, which can be generated using the following code :
 ```shell
 ./gen_lookup_table.sh
 ```
-
+A sample lookup-table has been given in the _reqd_files_ folder for reference.
 
 # Placement of the downloaded folder
 * Once the _Goodness-of-Pronunciation-master.zip_ file is downloaded it needs to be placed in _/home/user/kaldi/egs/Native_Acoustic_Model/s5/_ and needs to unzipped as _Extract_Here_ which will result in the creation of the following path _/home/user/kaldi/egs/Native_Acoustic_Model/s5/Goodness-of-Pronunciation-master/_. The native acoustic model needs to be trained on _nnet2_ with all paths functional in _exp_ folder.
