@@ -74,7 +74,7 @@ print('GOP formulated score of each phoneme : ');
 print(phone_score);   
                       
 #The phoneme_list.txt file contains phoneme's in the 1st column and GoP formulated scores in the 2nd column     
-f = open('phoneme_list.txt', 'w')
+f = open(sys.argv[3], 'w')
 for i in range(len(phone_score)):
     f.write("%s   %f\n" % (aligned_phones[i], phone_score[i]))
 f.close()
