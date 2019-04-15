@@ -10,9 +10,9 @@ Run the below code (**_prop_gop_eqn.py_**) to compute the score using the propos
 ```python
 python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 ```
-* The **_alignment_infile.txt_** file is the output of the forced-alignment of the learner's uttered speech which can be generated using **_align.sh_**.
-* The **_posterior_infile.ark_** file is the posterior-probability of the learner's uttered speech which can be generated using **_nnet_am_compute.cc_**. After generating the above files, both of these files needs to be placed inside the _reqd_files_ folder.
-* The GoP formulated score is printed in the **_gop_outfile.txt_** file.
+* The **_alignment_infile.txt_** file is the output of the forced-alignment of the learner's uttered speech which is obtained with **_align.sh_**.
+* The **_posterior_infile.ark_** file contains the frame level posterior-probability of the learner's uttered speech which is obtained with **_nnet_am_compute.cc_**. 
+* The **_gop_outfile.txt_** file contains the score obtained using the proposed GoP formulation.
 
 **NOTE** :
 * The above python script requires a lookup table for a given acoustic model as discussed in the paper, which can be generated using the following code :
