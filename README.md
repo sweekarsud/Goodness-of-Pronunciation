@@ -38,8 +38,9 @@ After generating  the lookup table, run the following code to compute the GoP fo
 ```python
 python prop_gop_eqn.py posterior.ark alignment.txt
 ```
-* A file by the name _alignment.txt_ needs to be generated which should contain the forced-alignment of the learner's uttered speech.
-* Another file by the name _posterior.ark_ needs to be generated which should contain the posterior-probability of the learner's uttered speech.
-* A completely _Trained Acoustic Model_ on _NNET2_ (For example : Librispeech, Fisher-English, etc.).
+* The _alignment.txt_ file needs to be generated and should be placed inside _reqd_files_ folder, it contains the forced-alignment of the learner's uttered speech which can be generated using _align.sh_ (refer kaldi documentation).
+* The _posterior.ark_ file also needs to be generated and should be placed inside _reqd_files_ folder, it contains the posterior-probability of the learner's uttered speech which can be generated using _nnet_am_compute.cc_ (refer kaldi documentation).
+* The _Acoustic_Model_ (Eg: Librispeech, Fisher-English, etc.) used for computing the score for the GoP formulation needs to be trained on _nnet2_ (refer Dan's recipe in kaldi documentation).
+* The GoP formulated score is  printed in the _phoneme_list.txt_ file.
 
 
