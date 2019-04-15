@@ -16,12 +16,12 @@ This code reflects the work described in the InterSpeech 2019 submitted paper on
 │   │   │   │   ├── gen_lookup_table.sh
 │   │   │   │   ├── modify_post.sh
 │   │   │   │   ├── extract_from_alignments.sh
-│   │   │   │   ├── phoneme_list.txt
+│   │   │   │   ├── gop_outfile.txt
 │   │   │   │   ├── prop_gop_eqn.py
 │   │   │   │   ├── reqd_files
-│   │   │   │   │   ├── alignment.txt
+│   │   │   │   │   ├── alignment_infile.txt
 │   │   │   │   │   ├── posterior.txt
-│   │   │   │   │   ├── posterior.ark
+│   │   │   │   │   ├── posterior_infile.ark
 │   │   │   │   │   ├── show_transitions.txt
 │   │   │   │   │   ├── lookup_table.txt
 │   │   │   │   │   ├── tmp_t_ids.txt
@@ -36,11 +36,11 @@ This code reflects the work described in the InterSpeech 2019 submitted paper on
 ```
 After generating  the lookup table, run the following code to compute the GoP formulated score for a learner's uttered wav file by passing _alignment.txt_ and _posterior.ark_ as the file arguments to the python script. 
 ```python
-python prop_gop_eqn.py posterior.ark alignment.txt
+python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 ```
 * The _alignment.txt_ file needs to be generated and should be placed inside _reqd_files_ folder, it contains the forced-alignment of the learner's uttered speech which can be generated using _align.sh_ (refer kaldi documentation).
 * The _posterior.ark_ file also needs to be generated and should be placed inside _reqd_files_ folder, it contains the posterior-probability of the learner's uttered speech which can be generated using _nnet_am_compute.cc_ (refer kaldi documentation).
 * The _Acoustic_Model_ (Eg: Librispeech, Fisher-English, etc.) used for computing the score for the GoP formulation needs to be trained on _nnet2_ (refer Dan's recipe in kaldi documentation).
-* The GoP formulated score is  printed in the _phoneme_list.txt_ file.
+* The GoP formulated score is  printed in the _gop_outfile.txt_ file.
 
 
