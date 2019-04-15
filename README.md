@@ -10,8 +10,8 @@ Run the below code (**_prop_gop_eqn.py_**) to compute the score using the propos
 ```python
 python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 ```
-* The **_alignment_infile.txt_** file is the output of the forced-alignment of the learner's uttered speech and these are obtained using **_align.sh_**.
-* The **_posterior_infile.ark_** file contains the frame level posterior-probabilities of the learner's uttered speech and these are obtained using **_nnet_am_compute.cc_**. 
+* The **_alignment_infile.txt_** file is the output of the forced-alignment of the learner's uttered speech and this is  obtained using **_align.sh_**.
+* The **_posterior_infile.ark_** file contains the frame level posterior-probabilities of the learner's uttered speech and this is obtained using **_nnet_am_compute.cc_**. 
 * The **_gop_outfile.txt_** file contains the score for each phoneme.
 
 **NOTE** :
@@ -19,7 +19,6 @@ python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 ```shell
 ./gen_lookup_table.sh
 ```
-A sample lookup-table has been given in the _reqd_files_ folder for reference.
 
 # Placement of the downloaded folder :
 * Once the _Goodness-of-Pronunciation-master.zip_ file is downloaded it needs to be placed in _/home/user/kaldi/egs/Native_Acoustic_Model/s5/_ and needs to unzipped as _Extract_Here_ which will result in the creation of the following path _/home/user/kaldi/egs/Native_Acoustic_Model/s5/Goodness-of-Pronunciation-master/_. The native acoustic model needs to be trained on _nnet2_ with all paths functional in _exp_ folder.
