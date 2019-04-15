@@ -7,12 +7,12 @@ This code reflects the work described in the InterSpeech 2019 submitted paper on
 * The _Native Acoustic Model_ used for computing the GoP formulated score needs to be trained with _nnet2_ considering the architecture provided in Dan's recipe (refer kaldi documentation).
 
 # How to run the code : 
-Run the below code to compute the score using the proposed GoP formulation score by passing _alignment_infile.txt_ and _posterior_infile.ark_ as the input file arguments to the python script for a given learner's utterance. 
+Run the below code (**_prop_gop_eqn.py_**) to compute the score using the proposed GoP formulation score by passing **_alignment_infile.txt_** and **_posterior_infile.ark_** as the input file arguments to the python script for a given learner's utterance. 
 ```python
 python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 ```
-* where _alignment_infile.txt_ file is the forced-alignment of the learner's uttered speech which can be generated using _align.sh_ (refer kaldi documentation) and the _posterior_infile.ark_ file is the posterior-probability of the learner's uttered speech which can be generated using _nnet_am_compute.cc_ (refer kaldi documentation). After generating the files, both these files need to be placed inside the _reqd_files_ folder.
-* The GoP formulated score is printed in the _gop_outfile.txt_ file.
+* where **_alignment_infile.txt_** file is the forced-alignment of the learner's uttered speech which can be generated using **_align.sh_** (refer kaldi documentation) and the **_posterior_infile.ark_** file is the posterior-probability of the learner's uttered speech which can be generated using **_nnet_am_compute.cc_** (refer kaldi documentation). After generating the files, both these files need to be placed inside the _reqd_files_ folder.
+* The GoP formulated score is printed in the **_gop_outfile.txt_** file.
 
 **NOTE** :
 * For running the above python script, initially the following shell script needs to be run to generate the lookup table for the native acoustic model and it only needs to be generated once for an acoustic model. A sample lookup-table has been given in the reqd_files folder for reference.
