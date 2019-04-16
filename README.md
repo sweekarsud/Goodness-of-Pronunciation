@@ -15,7 +15,7 @@ python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 * The **_gop_outfile.txt_** file contains the score for each phoneme.
 
 **NOTE** :
-* The above python script requires a lookup table for a given acoustic model as discussed in the paper, which can be generated using the following code :
+* The above python script requires a lookup table to generate the scores for an acoustic model as discussed in the paper, which can be generated using the following code :
 ```shell
 ./gen_lookup_table.sh
 ```
