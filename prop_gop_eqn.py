@@ -11,11 +11,11 @@ import numpy as np
 
 path = os.getcwd(); 
   
-#modifying posterior.ark to posterior.txt
+# Modifying posterior.ark to posterior.txt
 var1 = [path + '/reqd_files/' + sys.argv[1]];
 subprocess.call(['bash', 'modify_post.sh', str(var1[0])]);
                     
-#creating segment information list, aligned phones list & transition_id's list 
+# Creating segment information list, aligned phones list & transition_id's list 
 var2 = [path + '/reqd_files/' + sys.argv[2]];
 subprocess.call(['bash', 'extract_from_alignments.sh', str(var2[0])]);
                
@@ -73,7 +73,7 @@ print(aligned_phones);
 print('GOP formulated score of each phoneme : ');
 print(phone_score);   
                       
-#The phoneme_list.txt file contains phoneme's in the 1st column and GoP formulated scores in the 2nd column     
+# The phoneme_list.txt file contains phoneme's in the 1st column and GoP formulated scores in the 2nd column     
 f = open(sys.argv[3], 'w')
 for i in range(len(phone_score)):
     f.write("%s   %f\n" % (aligned_phones[i], phone_score[i]))
