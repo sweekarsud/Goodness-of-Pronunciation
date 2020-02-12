@@ -3,7 +3,7 @@ This code reflects the work described in the **[INTERSPEECH 2019](https://www.in
 
 # Requirements :
 * Python (tested with v.2.7.5 & v.3.5.7).
-* Kaldi ASR toolkit (for documentation checkout : http://kaldi-asr.org/) considering acoustic models trained with _nnet2_ (Dan's recipe).
+* Kaldi ASR toolkit (for documentation checkout : http://kaldi-asr.org/) considering acoustic models trained with _nnet2_ (Dan's recipe) (tested with nnet2 & nnet3).
 
 # How to run the code : 
 Run the below code (**_prop_gop_eqn.py_**) to compute the score using the proposed GoP formulation by passing **_alignment_infile.txt_** and **_posterior_infile.ark_** generated for a given learner's utterance. 
