@@ -45,3 +45,16 @@ python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 │   │   │   │   │   ├── tmp_segments.txt
 ```
 
+# Citing: 
+If you find our work useful, please cite:
+```
+@inproceedings{Sudhakara2019,
+  author={Sweekar Sudhakara and Manoj Kumar Ramanathi and Chiranjeevi Yarra and Prasanta Kumar Ghosh},
+  title={{An Improved Goodness of Pronunciation (GoP) Measure for Pronunciation Evaluation with DNN-HMM System Considering HMM Transition Probabilities}},
+  year=2019,
+  booktitle={Proc. Interspeech 2019},
+  pages={954--958},
+  doi={10.21437/Interspeech.2019-2363},
+  url={http://dx.doi.org/10.21437/Interspeech.2019-2363}
+}
+```
