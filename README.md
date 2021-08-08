@@ -1,4 +1,4 @@
-# Goodness-of-Pronunciation
+# Goodness of Pronunciation (GoP)
 This code reflects the work described in the **[INTERSPEECH 2019](https://www.interspeech2019.org/)** published paper on **["An improved goodness of pronunciation (GoP) measure for pronunciation evaluation with DNN-HMM system considering HMM transition probabilities"](https://www.isca-speech.org/archive/Interspeech_2019/pdfs/2363.pdf)**.
 
 # Requirements :
