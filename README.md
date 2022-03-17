@@ -1,9 +1,9 @@
 # Goodness of Pronunciation (GoP)
-This code reflects the work described in the **[INTERSPEECH 2019](https://www.interspeech2019.org/)** published paper on **["An improved goodness of pronunciation (GoP) measure for pronunciation evaluation with DNN-HMM system considering HMM transition probabilities"](https://spire.ee.iisc.ac.in/spire/papers_pdf/Sweekar_INTERSPEECH_2019.pdf)**.
+This code reflects the work described in the **[INTERSPEECH 2019](https://www.interspeech2019.org/)** published paper on **["An improved goodness of pronunciation (GoP) measure for pronunciation evaluation with DNN-HMM system considering HMM transition probabilities"](https://www.isca-speech.org/archive/pdfs/interspeech_2019/sudhakara19_interspeech.pdf)**.
 
 # Requirements :
 * Python (tested with v.2.7.5 & v.3.5.7).
-* Kaldi ASR toolkit (for documentation checkout : http://kaldi-asr.org/) considering acoustic models trained with _nnet2_ (Dan's recipe) (tested with nnet2 & nnet3) on Librispeech.
+* Kaldi ASR toolkit (for documentation checkout : http://kaldi-asr.org/) considering acoustic models trained with _nnet2_ (Dan's recipe) (tested with nnet2 & nnet3) on LibriSpeech.
 
 # How to run the code : 
 Run the below code (**_prop_gop_eqn.py_**) to compute the score using the proposed GoP formulation by passing **_alignment_infile.txt_** and **_posterior_infile.ark_** generated for a given learner's utterance. 
