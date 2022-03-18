@@ -6,7 +6,7 @@ This code reflects the work described in the **[INTERSPEECH 2019](https://www.in
 * Kaldi ASR toolkit (for documentation checkout : http://kaldi-asr.org/) considering acoustic models trained with _nnet2_ (Dan's recipe) (tested with nnet2 & nnet3) on LibriSpeech.
 
 # How to run the code : 
-Run the below code (**_prop_gop_eqn.py_**) to compute the score using the proposed GoP formulation by passing **_alignment_infile.txt_** and **_posterior_infile.ark_** generated for a given learner's utterance. 
+Run the below code (**_prop_gop_eqn.py_**) to compute the score using the proposed GoP formulation by passing **_alignment_infile.txt_** and **_posterior_infile.ark_** generated for a single learner's utterance. 
 ```python
 python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 ```
@@ -14,8 +14,11 @@ python prop_gop_eqn.py posterior_infile.ark alignment_infile.txt gop_outfile.txt
 * The **_posterior_infile.ark_** file contains the frame level posterior-probabilities of the learner's uttered speech (.wav file) and this is obtained using **_nnet_am_compute.cc_**. 
 * The **_gop_outfile.txt_** file contains the score for each phoneme.
 
+How to generate the input files:
+
+
 **NOTE** :
-* The above python script requires a lookup table to generate the scores for an acoustic model as discussed in the paper, which can be generated using the following code :
+* The above Python script requires a lookup table to generate the scores for an acoustic model as discussed in the paper, which can be generated using the following code :
 ```shell
 ./gen_lookup_table.sh
 ```
