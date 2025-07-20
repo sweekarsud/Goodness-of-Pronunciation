@@ -58,6 +58,3 @@ If you find our work useful, please cite:
   url={http://dx.doi.org/10.21437/Interspeech.2019-2363}
 }
 ```
-
-# License: 
-This work is licensed under the [MIT License](https://github.com/sweekarsud/Goodness-of-Pronunciation/blob/master/LICENSE).
