@@ -60,4 +60,4 @@ If you find our work useful, please cite:
 ```
 
 # License: 
-This work is licensed under the [MIT License](https://github.com/sweekarsud/Goodness-of-Pronunciation/blob/master/LICENSE)
+This work is licensed under the [MIT License](https://github.com/sweekarsud/Goodness-of-Pronunciation/blob/master/LICENSE).
