@@ -23,5 +23,3 @@ do
 	fi
 
 done < reqd_files/show_transitions.txt > reqd_files/lookup_table.txt
-
-
